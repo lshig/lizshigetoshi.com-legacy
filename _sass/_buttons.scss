@@ -1,0 +1,69 @@
+/* ==========================================================================
+ Buttons SCSS - specifics
+ Disabled, 3D Raised, Large
+ ========================================================================== */
+.button {
+  border: $button-border;
+  border-radius: $button-radius;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+/*******************
+ Disabled
+*******************/
+.button.disabled,
+.button:disabled,
+.button[disabled] {
+  background-color: $button-disabled-background !important;
+  box-shadow: none;
+  color: $button-disabled-color !important;
+  cursor: default;
+
+  * {
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: $button-disabled-background !important;
+    color: $button-disabled-color !important;
+  }
+}
+/*******************
+ 3D Raised
+*******************/
+.button {
+  text-decoration: none;
+  color: $black-color;
+  background-color: $button-raised-background;
+  text-align: center;
+  @extend .z-depth-1;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white-color;
+    @extend .z-depth-1-half;
+  }
+}
+/*******************
+ Large
+*******************/
+.button-large {
+  @extend .button;
+  font-size: 18px;
+
+  i {
+    font-size: 20px;
+    line-height: inherit;
+    margin-right: 0.4rem;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

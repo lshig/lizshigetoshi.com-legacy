@@ -1,0 +1,64 @@
+---
+layout: default-large
+---
+<div class="page">
+  <div class="page-heading-wrapper">
+    <div class="page-heading">
+      <h1 class="page-title">Past Work {{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="row page-spacing">
+      {% for work in site.posts %} {% if work.employer %}
+      <a href="{{ work.link }}" target="_blank">
+        <div class="col s12 m6 l6">
+          <div class="card project waves-effect waves-dark black-text">
+            <div class="card-title__center">
+              {{ work.title }}
+            </div>
+            <div class="card-action__center">
+              <span class="card-footnote">{{ work.employer }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  <div class="page-heading-wrapper">
+    <div class="page-heading">
+      <h1 class="page-title">Personal {{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="row">
+      {% assign sortedPosts = site.posts | sort:"rank" %}
+      {% for card in sortedPosts %} {% if card.code %}
+      <a href="{{ card.link }}" target="_blank">
+        <div class="col s12 m6 l6">
+          <div class="card project waves-effect waves-dark black-text">
+            <div class="card-title__auto">
+              {{ card.repo }}
+            </div>
+            <div class="card-description">
+              <p>{{ card.description | truncate:100 }}</p>
+            </div>
+            <div class="card-emojis">
+              <p>{{ card.emojis }}</p>
+            </div>
+            <div class="card-action__auto">
+              <span class="card-footnote">Added {{ card.date | date: "%B %-d, %Y" }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+    <div class="row center">
+      <a href="{{ page.link }}" target="_blank" id="download-button" class="button-large waves-effect waves-dark">
+        <i class="fa fa-github"></i>
+        <span>All Repositories</span>
+      </a>
+    </div>
+  </div>
+</div>

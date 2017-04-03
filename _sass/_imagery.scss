@@ -1,0 +1,56 @@
+/* ==========================================================================
+ Imagery SCSS
+ Images, Icons
+ ========================================================================== */
+/*******************
+ Images
+*******************/
+img {
+  max-width: $full-width;
+  vertical-align: middle;
+}
+/*******************
+  Icons
+*******************/
+i {
+  line-height: inherit;
+
+  &.left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  &.right {
+    float: right;
+    margin-left: 15px;
+  }
+
+  &.tiny {
+    font-size: 1rem;
+  }
+
+  &.small {
+    font-size: 2rem;
+  }
+
+  &.medium {
+    font-size: 4rem;
+  }
+
+  &.large {
+    font-size: 6rem;
+  }
+}
+
+.icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: $grey-color;
+    }
+  }
+}

@@ -1,11 +1,19 @@
 ---
 layout: page
-title: About
+title: ABOUT ME
 permalink: /about/
+weight: 1
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## Hi, I'm Liz
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+<p class="emoji-text">:computer: :mortar_board: :coffee: :fries: :muscle: :house_with_garden: :basketball: :airplane:</p>
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- I love tinkering with new technologies and translating my ideas to code! I want to build applications that are innovative, meaningful, and fun to use.
+- I graduated from the University of California, Davis with a major in Computer Science and a minor in Computational Biology. Go Aggies!
+- I’m heavily fueled by a daily dose of 150+ mg of caffeine and 150+ g of carbs drenched in hot sauce. NOMS!
+- Since November 2014, I got my health in check and lost 30lb... so being a sweaty gym junky is kinda my thing now too.
+- I'm 916 born-n-raised, and a born again supporter of the Sacramento Kings. (Though I have a special place for all of my favorite NBA point guards.)
+- I was bit by my first wanderlust bug in 2013, and plan to explore many more places on my bucket list!
+
+<span class="bold-text">Let's share ideas and collaborate!</span><br>Contact <a href="mailto:{{ site.email }}"><u>lizshigetoshi@gmail.com</u></a>.

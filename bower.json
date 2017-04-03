@@ -1,0 +1,23 @@
+{
+  "name": "lshig.github.io",
+  "homepage": "https://github.com/lshig/lshig.github.io",
+  "authors": [
+    "Liz Shigetoshi <lshigetoshi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "*",
+    "font-awesome": "*"
+  }
+}

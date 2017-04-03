@@ -1,0 +1,65 @@
+/* ==========================================================================
+Specific SCSS
+Name Tag
+ ========================================================================== */
+/*******************
+ Name Tag
+*******************/
+#hello-again-im-liz {
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.name-tag {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  width: $min-width-px;
+  height: 200px;
+  background: $black-color-opacity-mid;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5),0 2px 10px 0 rgba(0,0,0,0.12);
+  font-size: 0.9vw;
+
+  &:hover {
+    opacity: 0.8;
+    @extend .z-depth-1-half;
+  }
+
+  .greeting-section {
+    height: 72px;
+    padding: 5px 0;
+
+    .greeting,
+    .my-name-is {
+      padding: 0;
+      margin: 0;
+      font-size: $base-font-size;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+      color: $white-color-opacity-high;
+      letter-spacing: 3.25px;
+    }
+
+    .greeting {
+      padding: 5px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  .name-section {
+    height: 120px;
+    padding-top: 26px;
+    background: $white-color-opacity-high;
+
+    .name {
+      font-size: 48px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

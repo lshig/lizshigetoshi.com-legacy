@@ -1,0 +1,16 @@
+{% for page in site.posts %}
+{% if page.text %}
+<div class="wrapper" id="about-me">
+  <div class="page">
+    <div class="page-heading-wrapper">
+      <div class="page-heading">
+        <h2 class="page-title">{{ page.title }}</h2>
+      </div>
+    </div>
+    <article class="page-content">
+      {{ page.content }}
+    </article>
+  </div>
+</div>
+{% endif %}
+{% endfor %}

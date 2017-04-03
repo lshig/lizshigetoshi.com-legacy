@@ -1,23 +1,6 @@
-<header>
-  <nav>
-    <div class="menu-button hide-on-large-only">
-      <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-dark">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="side-nav fixed" id="nav-mobile">
-      <ul>
-        <li><a href="{{ site.baseurl }}/" class="brand-logo waves-effect waves-light">{{ site.title }}</a></li>
-        {% assign pages = site.pages | sort:"weight" %} {% for p in pages %} {% if p.title %}
-        <li><a href="{{ p.url | prepend: site.baseurl }}" class="nav-link waves-effect waves-light">{{ p.title }}</a></li>
-        {% endif %} {% endfor %}
-        <li class="github-link">
-            <a href="https://github.com/lshig/lshig.github.io" target="_blank" class="button-link waves-effect waves-light">
-            <i class="fa fa-github"></i>
-            View on GitHub
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<header class="side-nav fixed">
+  <ul>
+    <li>{% include nametag.html %}</li>
+    <li>{% include media.html %}</li>
+  </ul>
 </header>

@@ -1,5 +1,4 @@
 ---
-layout: projects
 title:  "TherMOOstat"
 employer: "UC Davis<br>Energy Conservation Office"
 link:   "http://thermoostat.ucdavis.edu"

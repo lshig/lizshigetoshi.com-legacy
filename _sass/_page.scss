@@ -1,10 +1,6 @@
 /* ==========================================================================
  Page Default SCSS - specifics
  ========================================================================== */
-.page-spacing {
-  margin-bottom: $spacing-vw;
-}
-
 .page-heading-wrapper {
   width: 100%;
   text-align: center;
@@ -31,7 +27,7 @@
     }
   }
 }
-@media only screen and (max-width: $medium-screen) {
+@media only screen and (max-width: $large-screen) {
   .page-heading-wrapper {
     margin: 0 auto;
     padding: 0 30px;
@@ -119,7 +115,7 @@
     max-width: $max-inner-width-px;
   }
 }
-@media only screen and (max-width: $medium-screen) {
+@media only screen and (max-width: $large-screen) {
   .page-content {
     width: $full-width;
     padding: 80px 15px;

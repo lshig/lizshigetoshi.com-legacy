@@ -1,5 +1,4 @@
 ---
-layout: projects
 title:  "Stories of Solidarity"
 employer: "UC Davis<br>Department of Design"
 link:   "http://vis.ucdavis.edu/?page_id=980"

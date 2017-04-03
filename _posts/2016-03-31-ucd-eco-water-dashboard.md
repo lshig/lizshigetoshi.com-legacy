@@ -1,5 +1,4 @@
 ---
-layout: projects
 title:  "Campus Water Dashboard"
 employer: "UC Davis<br>Energy Conservation Office"
 link:   "http://water.ucdavis.edu"

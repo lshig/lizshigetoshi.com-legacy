@@ -1,11 +1,11 @@
 markdown: kramdown
 kramdown:
   input: GFM
-title: lshig.github.io
+title: Liz Shigetoshi
 description: "Hi, I'm Liz Shigetoshi. Full Stack Developer fueled by a daily dose of 150+ mg of caffeine and 150+ g of carbs drenched in hot sauce."
 email: lizshigetoshi@gmail.com
 baseurl: ""
-url: "http://lshig.github.io"
+url: "http://lizshigetoshi.com"
 timezone: America/Sacramento
 author: Liz Shigetoshi
 github_username:  lshig

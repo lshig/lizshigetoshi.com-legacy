@@ -4,11 +4,8 @@ Variables SCSS
  /*******************
    TEXTUAL
  *******************/
-@charset "utf-8";
-@import url("../../bower_components/font-awesome/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 $base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
-$base-font-size: 16px;;
+$base-font-size: 16px;
 $base-font-weight: 300;
 $font-weight-light: 200;
 $font-weight-heavy: 600;
@@ -30,12 +27,12 @@ $h6-font-size: 1rem !default;
   SIZING
 *******************/
 $nav-unit: 80px;
-$nav-width: 300px;
+$nav-width: 35%;
 $icon-size-small: 20px;
 $icon-size-medium: 28px;
 $icon-size-large: $font-size-medium2;
-$footer-unit: 140px;
-$footer-padding: 50px;
+$media-unit: 140px;
+$media-padding: 50px;
 $card-padding: 20px;
 $card-height-small: 180px;
 $card-height-large: 260px;
@@ -51,7 +48,7 @@ $max-outer-width-px: 1280px;
 $max-width-percent: 90%;
 $on-palm: 600px;
 $on-laptop: 800px;
-$laptop-min-height: 500px;
+$laptop-min-height: $min-height-px;
 @mixin media-query($device) {
    @media screen and (max-width: $device){
     @content;
@@ -65,7 +62,8 @@ $primary-text-color: #000;
 $background-color: #fff;
 $transparent-color: transparent;
 $black-color: #000;
-$black-color-opacity-high: rgba(0,0,0,0.85);
+$black-color-opacity-high2: rgba(0,0,0,0.85);
+$black-color-opacity-high1: rgba(0,0,0,0.7);
 $black-color-opacity-mid: rgba(0,0,0,0.6);
 $black-color-opacity-low: rgba(0,0,0,0.3);
 $white-color: #fff;
@@ -76,7 +74,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 $src-gradient-color: #5f2c82;
 $dest-gradient-color: #49a09d;
-$footer-bg-color: $transparent-color !default;
+$media-bg-color: $transparent-color !default;
 /*******************
   BUTTONS
 *******************/
@@ -105,6 +103,7 @@ $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
 $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
 $small-and-down: "only screen and (max-width : #{$small-screen})" !default;
 $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
 /*******************
   GRID
 *******************/
@@ -122,8 +121,8 @@ $navbar-font-color: #fff !default;
 $navbar-brand-font-size: 2.1rem !default;
 $sidenav-font-size: 20px !default;
 $sidenav-font-color: $white-color !default;
-$sidenav-bg-color: $black-color-opacity-high !default;
-$sidenav-hover-color: $black-color-opacity-high !default;
+$sidenav-bg-color: $black-color-opacity-high2 !default;
+$sidenav-hover-color: $black-color-opacity-high2 !default;
 $sidenav-overlay-color: $black-color-opacity-mid !default;
 $sidenav-padding: 20px !default;
 $sidenav-item-height: 48px !default;

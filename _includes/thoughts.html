@@ -1,0 +1,32 @@
+<div class="end-wrapper">
+  <div class="page">
+    <div class="page-heading-wrapper">
+      <div class="page-heading">
+        <h1 class="page-title">Thoughts</h1>
+      </div>
+    </div>
+    <div class="card-content">
+      <div class="row">
+        {% for post in site.posts %}
+        {% if post.category %}
+        <a href="{{ post.url }}" target="_blank">
+          <div class="col s12 m6 l6">
+            <div class="card blog waves-effect waves-dark black-text">
+              <div class="card-title__center blog-title">
+                {{ post.title }}
+              </div>
+              <div class="card-description">
+                <p>{{ post.emojis }}</p>
+              </div>
+              <div class="card-action__center">
+                <span class="card-footnote">{{ post.date | date: "%B %-d, %Y" }}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

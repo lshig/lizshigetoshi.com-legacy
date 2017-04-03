@@ -1,5 +1,4 @@
 ---
-layout: projects
 repo: presentations
 title: Presentations
 link: 'https://lshig.github.io/presentations/js-arrays-part-1#/'

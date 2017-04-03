@@ -1,5 +1,4 @@
 ---
-layout: projects
 repo: leetcode-practice
 title: LeetCode Practice
 link: 'https://github.com/lshig/leetcode-practice'

@@ -1,5 +1,4 @@
 ---
-layout: projects
 repo: sacramento-music
 title: 'Sacramento, CA Meets Music and Code'
 link: 'https://lshig.github.io/sacramento-music'

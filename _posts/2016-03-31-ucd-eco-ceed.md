@@ -1,5 +1,4 @@
 ---
-layout: projects
 title:  "Campus Energy Education Dashboard"
 employer: "UC Davis<br>Energy Conservation Office"
 link:   "http://ceed.ucdavis.edu"

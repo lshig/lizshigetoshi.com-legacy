@@ -15,10 +15,12 @@ Name Tag
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   width: $min-width-px;
   height: 200px;
-  background: $black-color-opacity-mid;
+  background: $src-gradient-color;
+  background: -webkit-linear-gradient(to left, $src-gradient-color , $dest-gradient-color);
+  background: linear-gradient(to left, $src-gradient-color , $dest-gradient-color);
   border-radius: 8px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5),0 2px 10px 0 rgba(0,0,0,0.12);
   font-size: 0.9vw;
@@ -29,8 +31,11 @@ Name Tag
   }
 
   .greeting-section {
-    height: 72px;
     padding: 5px 0;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: url(../images/texture.svg) repeat;
 
     .greeting,
     .my-name-is {
@@ -54,12 +59,99 @@ Name Tag
   .name-section {
     height: 120px;
     padding-top: 26px;
+    margin-top: -128px;
     background: $white-color-opacity-high;
 
     .name {
+      color: #000;
       font-size: 48px;
       text-align: center;
       text-transform: uppercase;
     }
+  }
+}
+
+.cover-img {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: $black-color-opacity-mid;
+
+  img {
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+  }
+}
+
+.typing-container {
+  text-align: center;
+  opacity: 1;
+  background-color: $black-color-opacity-high2;
+  padding: 15px;
+  display: inline-block;
+  margin: 0;
+}
+.intro-typing,
+.typed-cursor {
+  opacity: 1;
+  display: inline;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@media #{$large-and-down} {
+  .typing-container,
+  .intro-typing,
+  .typed-cursor {
+    display: none;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

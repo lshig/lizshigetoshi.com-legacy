@@ -56,53 +56,77 @@ body {
   width: $full-width;
 }
 /*******************
-  Header, Main, Footer
+  Main
 *******************/
-.main-content {
-  @include flexbox-column();
-}
-
-.main-content__small {
-  height: $full-height;
-  background: url("../images/texture.svg") repeat;
-}
-
-.main-content__large {
+main {
   min-height: $full-height;
   height: auto !important;
   height: $full-height;
   background: url("../images/texture.svg") repeat;
-}
-
-main {
-  margin: auto;
-  width: $full-width;
-  overflow: hidden;
-}
-
-footer {
-  width: $full-width;
-  padding-bottom: $footer-padding;
-}
-
-footer,
-header,
-main {
+  display: block;
   padding-left: $nav-width;
+  .initial-wrapper {
+    margin: auto;
+    padding: $spacing-vw*2 0 $spacing-vw 0;
+  }
+  .wrapper {
+    margin: auto;
+    padding: $spacing-vw 0;
+  }
+  .end-wrapper {
+    margin: auto;
+    padding: $spacing-vw 0 $spacing-vw*2 0;
+  }
+  .initial-section {
+    text-align: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./images/2016-lake-clementine.jpg);
+    height: 100%;
+    opacity: 0.7;
+    min-height: $min-height-px;
+    padding: $spacing-vw*3 0;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  }
 }
-
-.wrapper {
-  margin: $spacing-vw auto;
-}
-@media only screen and (max-width: $medium-screen) {
-  footer,
-  header,
+@media #{$large-and-down} {
   main {
     padding-left: 0;
-  }
-
-  .wrapper {
-    margin: 82px auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-left: 0;
+    .initial-section {
+      padding: 0;
+      opacity: 1;
+      height: $min-height-px;
+      width: 100%;
+    }
+    .initial-section-post {
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(./images/2016-lake-clementine.jpg);
+      padding: 0;
+      opacity: 1;
+      height: $min-height-px;
+      width: 100%;
+      -webkit-filter: grayscale(40%);
+      filter: grayscale(40%);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    .initial-wrapper {
+      padding: 164px 0 82px 0;
+    }
+    .wrapper {
+      padding: 82px 0;
+    }
+    .end-wrapper {
+      padding: 82px 0 164px 0;
+    }
   }
 }
 /*******************

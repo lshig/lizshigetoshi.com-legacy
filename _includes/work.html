@@ -1,0 +1,27 @@
+<div class="initial-wrapper">
+  <div class="page">
+    <div class="page-heading-wrapper">
+      <div class="page-heading">
+        <h1 class="page-title">Work</h1>
+      </div>
+    </div>
+    <div class="card-content">
+      <div class="row page-spacing">
+        {% for work in site.posts %} {% if work.employer %}
+        <a href="{{ work.link }}" target="_blank">
+          <div class="col s12 m6 l6">
+            <div class="card project waves-effect waves-dark black-text">
+              <div class="card-title__center">
+                {{ work.title }}
+              </div>
+              <div class="card-action__center">
+                <span class="card-footnote">{{ work.employer }}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

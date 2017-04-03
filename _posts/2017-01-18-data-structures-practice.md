@@ -1,5 +1,4 @@
 ---
-layout: projects
 repo:   "data-structures-practice"
 title:  "Data Structures Practice"
 link:   "https://github.com/lshig/data-structures-practice"

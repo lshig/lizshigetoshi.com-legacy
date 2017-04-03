@@ -168,6 +168,16 @@
     display: block !important;
   }
 }
+.show-on-large-and-up {
+  @media #{$large-and-up} {
+    display: block !important;
+  }
+}
+.show-on-large-and-down {
+  @media #{$large-and-down} {
+    display: block !important;
+  }
+}
 
 .show-on-medium {
   @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {

@@ -12,8 +12,6 @@ Thumbs.db
 .sass-cache/
 node_modules/
 public/lib/
-bower_components/materialize/
-bower_components/jquery/
 .idea/
 coverage/
 

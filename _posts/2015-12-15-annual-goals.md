@@ -1,5 +1,4 @@
 ---
-layout: projects
 repo: annual-goals
 title: Annual Goals
 link: 'https://lshig.github.io/annual-goals'

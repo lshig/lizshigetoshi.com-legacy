@@ -27,6 +27,7 @@
 }
 @media #{$large-and-down} {
   .side-nav {
+    min-width: $min-width-px;
     width: 100%;
     height: $min-height-px;
     background-color: $black-color;

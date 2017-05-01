@@ -1,6 +1,7 @@
 /* ==========================================================================
  Main SCSS
  Imports
+ Variables
  ========================================================================== */
 /*******************
   Imports
@@ -8,8 +9,132 @@
 @charset "utf-8";
 @import url("https://use.fontawesome.com/7d90fe5352.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+ /*******************
+   TEXTUAL
+ *******************/
+$base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+$font-weight-light: 200;
+$font-weight-heavy: 600;
+$font-size-small: 12px;
+$letter-spacing-small: 0.05em;
+$font-size-medium1: 24px;
+$font-size-medium2: 30px;
+$link-size-small: 18px;
+$link-size-medium: 22px;
+$base-line-height: 1.5;
+$off-black: rgba(0, 0, 0, 0.87) !default;
+$h1-font-size: 4.2rem !default;
+$h2-font-size: 3.56rem !default;
+$h3-font-size: 2.92rem !default;
+$h4-font-size: 2.28rem !default;
+$h5-font-size: 1.64rem !default;
+$h6-font-size: 1rem !default;
+/*******************
+  SIZING
+*******************/
+$nav-unit: 80px;
+$nav-width: 35%;
+$icon-size-small: 20px;
+$icon-size-medium: 28px;
+$icon-size-large: $font-size-medium2;
+$media-unit: 140px;
+$media-padding: 50px;
+$card-padding: 20px;
+$card-height-small: 180px;
+$card-height-large: 260px;
+$spacing-vw: 6vw;
+$spacing-unit: 30px;
+$spacing-unit-large: $spacing-unit + $nav-unit;
+$full-height: 100%;
+$full-width: 100%;
+$min-height-px: 530px;
+$min-width-px: 330px;
+$max-inner-width-px: 800px;
+$max-outer-width-px: 1280px;
+$max-width-percent: 90%;
+$on-palm: 600px;
+$on-laptop: 800px;
+$laptop-min-height: $min-height-px;
+@mixin media-query($device) {
+   @media screen and (max-width: $device){
+    @content;
+  }
+}
+/*******************
+  COLORS
+*******************/
+$base-text-color: #000;
+$primary-text-color: #000;
+$background-color: #fff;
+$transparent-color: transparent;
+$black-color: #000;
+$black-color-opacity-high2: rgba(0,0,0,0.85);
+$black-color-opacity-high1: rgba(0,0,0,0.7);
+$black-color-opacity-mid: rgba(0,0,0,0.6);
+$black-color-opacity-low: rgba(0,0,0,0.3);
+$white-color: #fff;
+$white-color-opacity-high: rgba(255,255,255,0.75);
+$white-color-opacity-low: rgba(255,255,255,0.3);
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+$src-gradient-color: #5f2c82;
+$dest-gradient-color: #49a09d;
+$media-bg-color: $transparent-color !default;
+/*******************
+  BUTTONS
+*******************/
+$button-border: none !default;
+$button-font-size: 1.3rem !default;
+$button-height: 36px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+$button-disabled-background: #DFDFDF !default;
+$button-disabled-color: #9F9F9F !default;
+$button-raised-background: $white-color-opacity-high !default;
+$button-raised-background-hover: $white-color !default;
+$button-raised-color: #fff !default;
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+/*******************
+  MEDIA QUERIES
+*******************/
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
+/*******************
+  GRID
+*******************/
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+/*******************
+  NAVIGATION
+*******************/
+$navbar-height: 64px !default;
+$navbar-height-mobile: 56px !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+$sidenav-font-size: 20px !default;
+$sidenav-font-color: $white-color !default;
+$sidenav-bg-color: $black-color-opacity-high2 !default;
+$sidenav-hover-color: $black-color-opacity-high2 !default;
+$sidenav-overlay-color: $black-color-opacity-mid !default;
+$sidenav-padding: 20px !default;
+$sidenav-item-height: 48px !default;
 @import
-  "_variables",
   "_global",
   "_base",
   "_grid",

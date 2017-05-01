@@ -14,11 +14,7 @@ A way for me to introduce myself and play with Atom, GitHub Pages, Jekyll, Mater
 - View by opening `http://127.0.0.1:4000/` in a web browser
 
 ## TODO
-- add Modernizr or alternative
-- consider new navbar options, based on mobile browser status bars
-- responsive flex design and white space gap on iPad from status bars
-- improve text and writing
-- add animations, parallax images, button hovers, page scrolling, page transitions?
+- add animations, parallax images, button hovers, page scrolling
 - make page and writing more accessible
 - GitHub API!
 - Inspect Element easter eggs

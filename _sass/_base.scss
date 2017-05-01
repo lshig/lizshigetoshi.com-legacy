@@ -60,6 +60,7 @@ body {
 *******************/
 main {
   min-height: $full-height;
+  min-width: $min-width-px;
   height: auto !important;
   height: $full-height;
   background: url("../images/texture.svg") repeat;

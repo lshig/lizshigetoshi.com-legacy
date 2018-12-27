@@ -6,6 +6,6 @@ code: 'https://github.com/lshig/forms-challenge'
 date: 2017-04-03T12:00:00.000Z
 image: ''
 rank: 2
-description: "A way for me to experiment with front-end frameworks and forms."
+description: "An experiment in building forms."
 emojis: ':mailbox_with_mail: :white_check_mark:'
 ---

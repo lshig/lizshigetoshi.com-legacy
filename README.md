@@ -2,8 +2,6 @@
 
 Check out the [Live Demo](https://lshig.github.io)!
 
-A way for me to introduce myself and play with Atom, GitHub Pages, Jekyll, Materialize, Font Awesome, and SASS.
-
 ## Basics
 
 - Install [Jekyll](https://jekyllrb.com/)
@@ -12,13 +10,6 @@ A way for me to introduce myself and play with Atom, GitHub Pages, Jekyll, Mater
 - In the terminal: `cd lshig.github.io`
 - Build and compile: `jekyll serve`
 - View by opening `http://127.0.0.1:4000/` in a web browser
-
-## TODO
-- add animations, parallax images, button hovers, page scrolling
-- make page and writing more accessible
-- GitHub API!
-- Inspect Element easter eggs
-- build more projects!
 
 Thanks for stopping by to see the things I like to experiment on!
 

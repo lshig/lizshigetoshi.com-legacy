@@ -1,6 +1,6 @@
 /* ==========================================================================
- Page Default SCSS - specifics
- ========================================================================== */
+Page Default SCSS - specifics
+========================================================================== */
 .page-heading-wrapper {
   width: 100%;
   text-align: center;
@@ -20,6 +20,7 @@
       padding: 15px;
       color: $white-color;
       display: inline-block;
+
       @include media-query($on-laptop) {
         font-size: 32px;
         padding: 10px;
@@ -27,6 +28,7 @@
     }
   }
 }
+
 @media only screen and (max-width: $large-screen) {
   .page-heading-wrapper {
     margin: 0 auto;
@@ -46,6 +48,7 @@
   h1 {
     font-size: 38px;
     font-weight: 800;
+
     @include media-query($on-laptop) {
       font-size: 34px;
     }
@@ -55,6 +58,7 @@
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+
     @include media-query($on-laptop) {
       font-size: 28px;
     }
@@ -64,6 +68,7 @@
     font-size: 26px;
     font-weight: bold;
     text-align: center;
+
     @include media-query($on-laptop) {
       font-size: 22px;
     }
@@ -71,6 +76,7 @@
 
   h4 {
     font-size: 20px;
+
     @include media-query($on-laptop) {
       font-size: 18px;
     }
@@ -83,6 +89,7 @@
     letter-spacing: -.003em;
     margin-top: 29px;
     word-wrap: break-word;
+
     @include media-query($on-laptop) {
       font-size: 18px;
       line-height: 1.5;
@@ -101,6 +108,7 @@
     .bold-text {
       font-weight: 400;
     }
+
     @include media-query($on-laptop) {
       margin-top: 21px;
       font-size: 18px;

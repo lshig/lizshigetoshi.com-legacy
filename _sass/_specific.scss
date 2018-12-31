@@ -1,9 +1,10 @@
 /* ==========================================================================
 Specific SCSS
 Name Tag
- ========================================================================== */
+========================================================================== */
+
 /*******************
- Name Tag
+Name Tag
 *******************/
 #hello-again-im-liz {
   font-weight: 400;
@@ -91,6 +92,7 @@ Name Tag
   display: inline-block;
   margin: 0;
 }
+
 .intro-typing,
 .typed-cursor {
   opacity: 1;
@@ -109,6 +111,7 @@ Name Tag
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
+
 @media #{$large-and-down} {
   .typing-container,
   .intro-typing,
@@ -116,6 +119,7 @@ Name Tag
     display: none;
   }
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -129,6 +133,7 @@ Name Tag
     opacity: 1;
   }
 }
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
@@ -142,6 +147,7 @@ Name Tag
     opacity: 1;
   }
 }
+
 @-moz-keyframes blink {
   0% {
     opacity: 1;

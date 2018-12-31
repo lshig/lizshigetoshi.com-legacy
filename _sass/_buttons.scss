@@ -1,7 +1,7 @@
 /* ==========================================================================
- Buttons SCSS - specifics
- Disabled, 3D Raised, Large
- ========================================================================== */
+Buttons SCSS - specifics
+Disabled, 3D Raised, Large
+========================================================================== */
 .button {
   border: $button-border;
   border-radius: $button-radius;
@@ -12,8 +12,9 @@
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
+
 /*******************
- Disabled
+Disabled
 *******************/
 .button.disabled,
 .button:disabled,
@@ -32,8 +33,9 @@
     color: $button-disabled-color !important;
   }
 }
+
 /*******************
- 3D Raised
+3D Raised
 *******************/
 .button {
   text-decoration: none;
@@ -49,8 +51,9 @@
     @extend .z-depth-1-half;
   }
 }
+
 /*******************
- Large
+Large
 *******************/
 .button-large {
   @extend .button;

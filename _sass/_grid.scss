@@ -1,17 +1,19 @@
 /* ==========================================================================
- Grid SCSS
- stems from Materialize - http://materializecss.com/
- ========================================================================== */
+Grid SCSS
+stems from Materialize - http://materializecss.com/
+========================================================================== */
 .container {
   margin: 0 auto;
   max-width: $max-outer-width-px;
   width: 90%;
 }
+
 @media #{$medium-and-up} {
   .container {
     width: 85%;
   }
 }
+
 @media #{$large-and-up} {
   .container {
     width: 70%;

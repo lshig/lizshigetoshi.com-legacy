@@ -1,6 +1,6 @@
 /* ==========================================================================
- Navigation SCSS - specifics
- ========================================================================== */
+Navigation SCSS - specifics
+========================================================================== */
 .side-nav {
   @extend .z-depth-1;
   @include flexbox-column();
@@ -25,6 +25,7 @@
     }
   }
 }
+
 @media #{$large-and-down} {
   .side-nav {
     min-width: $min-width-px;

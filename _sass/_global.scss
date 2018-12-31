@@ -1,17 +1,18 @@
 /* ==========================================================================
- Global SCSS - specifics
- Transitions, Clearfix, Z-Levels, Positioning, Media Queries
- stems from Materialize - http://materializecss.com/
- ========================================================================== */
+Global SCSS - specifics
+Transitions, Clearfix, Z-Levels, Positioning, Media Queries
+========================================================================== */
+
 /*********************
-  Transitions
+Transitions
 **********************/
 .fade-in {
   opacity: 0;
   transform-origin: 0 50%;
 }
+
 /*******************
- Clearfix
+Clearfix
 *******************/
 .clearfix {
   &:after {
@@ -20,8 +21,9 @@
     clear: both;
   }
 }
+
 /*******************
-  Z-Levels
+Z-Levels
 *******************/
 .z-depth-0 {
   box-shadow: none !important;
@@ -50,12 +52,14 @@
 .z-depth-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
+
 /*******************
-  Positioning
+Positioning
 *******************/
 .hide {
   display: none !important;
 }
+
 .left-align {
   text-align: left;
 }
@@ -76,6 +80,7 @@
 .right {
   float: right !important;
 }
+
 @mixin flexbox-column() {
   display: -webkit-box;
   display: -moz-box;
@@ -89,11 +94,13 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 @mixin flexbox-align-self__auto() {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
 }
+
 @mixin flexbox-align-all__center() {
   -webkit-align-content: center;
   -moz-align-content: center;
@@ -105,6 +112,7 @@
   -moz-align-items: center;
   align-items: center;
 }
+
 @mixin flexbox-justify__center() {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -112,6 +120,7 @@
   -moz-justify-content: center;
   justify-content: center;
 }
+
 @mixin flexbox-justify__end() {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -119,18 +128,21 @@
   -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
+
 @mixin flexbox-grow__true() {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+
 @mixin flexbox-grow__false() {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
+
 /*********************
-  Media Queries
+Media Queries
 **********************/
 .hide-on-small-and-down,
 .hide-on-small-only {

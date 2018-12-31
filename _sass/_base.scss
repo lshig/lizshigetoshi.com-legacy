@@ -1,9 +1,10 @@
 /* ==========================================================================
- Base SCSS
- Resets, Base Layout, Textual Style
- ========================================================================== */
+Base SCSS
+Resets, Base Layout, Textual Style
+========================================================================== */
+
 /*******************
- Reset
+Reset
 *******************/
 blockquote,
 body,
@@ -25,8 +26,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /*******************
- Basics
+Basics
 *******************/
 html {
   box-sizing: border-box;
@@ -55,8 +57,9 @@ body {
   height: $full-height;
   width: $full-width;
 }
+
 /*******************
-  Main
+Main
 *******************/
 main {
   min-height: $full-height;
@@ -66,18 +69,22 @@ main {
   background: url("../images/texture.svg") repeat;
   display: block;
   padding-left: $nav-width;
+
   .initial-wrapper {
     margin: auto;
     padding: $spacing-vw*2 0 $spacing-vw 0;
   }
+
   .wrapper {
     margin: auto;
     padding: $spacing-vw 0;
   }
+
   .end-wrapper {
     margin: auto;
     padding: $spacing-vw 0 $spacing-vw*2 0;
   }
+
   .initial-section {
     text-align: center;
     background-position: bottom center;
@@ -93,6 +100,7 @@ main {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
 }
+
 @media #{$large-and-down} {
   main {
     padding-left: 0;
@@ -100,12 +108,14 @@ main {
     width: 100%;
     top: 0;
     padding-left: 0;
+
     .initial-section {
       padding: 0;
       opacity: 1;
       height: $min-height-px;
       width: 100%;
     }
+
     .initial-section-post {
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -119,19 +129,23 @@ main {
       filter: grayscale(40%);
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
+
     .initial-wrapper {
       padding: 164px 0 82px 0;
     }
+
     .wrapper {
       padding: 82px 0;
     }
+
     .end-wrapper {
       padding: 82px 0 164px 0;
     }
   }
 }
+
 /*******************
- Lists
+Lists
 *******************/
 ol,
 ul {
@@ -139,13 +153,14 @@ ul {
 }
 
 li {
-   > ul,
+  > ul,
   > ol {
     margin-bottom: 0;
   }
 }
+
 /*******************
- Headings
+Headings
 *******************/
 h1,
 h2,
@@ -155,8 +170,9 @@ h5,
 h6 {
   font-weight: $base-font-weight;
 }
+
 /*******************
- Links
+Links
 *******************/
 a {
   color: $black-color;

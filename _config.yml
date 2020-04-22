@@ -1,17 +1,16 @@
-markdown: kramdown
-kramdown:
-  input: GFM
 title: Liz Shigetoshi
 description: "Hi, I'm Liz Shigetoshi."
 email: lizshigetoshi@gmail.com
 baseurl: ""
-url: "http://lizshigetoshi.com"
+url: "https://lizshigetoshi.com"
 timezone: America/Sacramento
 author: Liz Shigetoshi
 github_username:  lshig
-medium_username: lizshigetoshi
 instagram_username: lizshig
 facebook_username: shigetoshi
 linkedin_username: elizabethshigetoshi
 plugins:
   - jemoji
+markdown: kramdown
+kramdown:
+  input: GFM

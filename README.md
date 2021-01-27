@@ -2,9 +2,9 @@
 
 [https://lizshigetoshi.com](https://lshig.github.io)
 
-## Set up
+## Quickstart
 
-- Install [Jekyll](https://jekyllrb.com/)
+- Install [Jekyll](https://jekyllrb.com/docs/)
 - Install [SASS](http://sass-lang.com/)
-- Build and compile: `jekyll serve`
+- Build and compile: `bundle exec jekyll serve`
 - Go to `http://127.0.0.1:4000/`
